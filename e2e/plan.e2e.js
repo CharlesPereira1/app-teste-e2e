@@ -9,7 +9,9 @@ describe("Example", () => {
     await device.reloadReactNative();
   });
 
-  it("should have welcome screen", async () => {
-    await expect(element(by.id("welcome"))).toBeVisible();
+  it("should have info about cancel subscription", async () => {
+    const info = await element(by.text("Cancel anytime. Ofter terms apply."));
+
+    await expect(info).toBeVisible();
   });
 });

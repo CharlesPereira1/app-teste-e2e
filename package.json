@@ -3,6 +3,7 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
+    "detox-android": "detox test -c android.emu.debug",
     "web": "expo start --web",
     "start": "react-native start"
   },
