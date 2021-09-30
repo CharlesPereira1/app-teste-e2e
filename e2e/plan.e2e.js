@@ -32,6 +32,8 @@ describe("Example", () => {
 
     await element(by.id("button-subscribe")).tap();
 
+    await device.takeScreenShot("snapshot-premium-plan-test");
+
     await expect(clickButton).toBeVisible();
     await new Promise((t) => setTimeout(t, 3000));
   });
